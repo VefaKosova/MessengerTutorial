@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "Marvel Is Dropping Some Mighty Tantalizing Hints At A Black Widow Movie.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
