@@ -25,3 +25,4 @@ struct ChatBubble: Shape {
 #Preview {
     ChatBubble(isFromCurrentUser: true)
 }
+    
