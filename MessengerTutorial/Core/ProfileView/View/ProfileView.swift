@@ -28,7 +28,7 @@ struct ProfileView: View {
                     }
                 }
                 
-                Text("Bruce Wayne")
+                Text(user.fullname)
                     .font(.title2)
                     .fontWeight(.semibold)
             }
