@@ -23,3 +23,4 @@ class ContentViewModel: ObservableObject {
         }.store(in: &cancellables)
     }
 }
+

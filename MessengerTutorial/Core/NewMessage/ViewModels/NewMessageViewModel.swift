@@ -5,14 +5,16 @@
 //  Created by Vefa Kosova on 26.02.2024.
 //
 
-import SwiftUI
+import Foundation
 
-struct NewMessageViewModel: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+class NewMessageViewModel: ObservableObject {
+    @Published var users = [User]()
+    
+    init() {
+        
     }
-}
-
-#Preview {
-    NewMessageViewModel()
+    
+    func fetchUsers() async throws {
+        self.users = try await UserService.shared.fetchAllUsers()
+    }
 }
