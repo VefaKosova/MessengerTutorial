@@ -11,6 +11,8 @@
 		DC3DD80A2B8E1524005F7D7E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3DD8092B8E1524005F7D7E /* Constants.swift */; };
 		DC3DD80D2B8E6209005F7D7E /* InboxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3DD80C2B8E6209005F7D7E /* InboxService.swift */; };
 		DC3DD80F2B8F539B005F7D7E /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3DD80E2B8F539B005F7D7E /* Date.swift */; };
+		DC3DD8132B8F591B005F7D7E /* ActiveNowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3DD8122B8F591B005F7D7E /* ActiveNowViewModel.swift */; };
+		DC3DD8162B8F8C72005F7D7E /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3DD8152B8F8C72005F7D7E /* Route.swift */; };
 		DC40525F2B83B551008E2C96 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC40525E2B83B551008E2C96 /* InboxView.swift */; };
 		DC4052622B83B76E008E2C96 /* ActiveNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4052612B83B76E008E2C96 /* ActiveNowView.swift */; };
 		DC4052642B83BC3E008E2C96 /* InboxRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4052632B83BC3E008E2C96 /* InboxRowView.swift */; };
@@ -51,6 +53,8 @@
 		DC3DD8092B8E1524005F7D7E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DC3DD80C2B8E6209005F7D7E /* InboxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxService.swift; sourceTree = "<group>"; };
 		DC3DD80E2B8F539B005F7D7E /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		DC3DD8122B8F591B005F7D7E /* ActiveNowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowViewModel.swift; sourceTree = "<group>"; };
+		DC3DD8152B8F8C72005F7D7E /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		DC40525E2B83B551008E2C96 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
 		DC4052612B83B76E008E2C96 /* ActiveNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowView.swift; sourceTree = "<group>"; };
 		DC4052632B83BC3E008E2C96 /* InboxRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxRowView.swift; sourceTree = "<group>"; };
@@ -122,6 +126,30 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		DC3DD8102B8F58EF005F7D7E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DC3DD8122B8F591B005F7D7E /* ActiveNowViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DC3DD8112B8F58F1005F7D7E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DC4052612B83B76E008E2C96 /* ActiveNowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC3DD8142B8F8C5E005F7D7E /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				DC3DD8152B8F8C72005F7D7E /* Route.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
 		DC40525D2B83B53F008E2C96 /* Inbox */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,7 +163,8 @@
 		DC4052602B83B747008E2C96 /* ActiveNow */ = {
 			isa = PBXGroup;
 			children = (
-				DC4052612B83B76E008E2C96 /* ActiveNowView.swift */,
+				DC3DD8112B8F58F1005F7D7E /* View */,
+				DC3DD8102B8F58EF005F7D7E /* ViewModel */,
 			);
 			path = ActiveNow;
 			sourceTree = "<group>";
@@ -168,6 +197,7 @@
 		DC476CEF2B6A64D3001541AF /* MessengerTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				DC3DD8142B8F8C5E005F7D7E /* Routing */,
 				DC476D022B6A65E1001541AF /* App */,
 				DC476D002B6A65DD001541AF /* Core */,
 				DC476D012B6A65DE001541AF /* Extensions */,
@@ -495,12 +525,14 @@
 				DC40525F2B83B551008E2C96 /* InboxView.swift in Sources */,
 				DCD74A652B86495B00B32794 /* LoginViewModel.swift in Sources */,
 				DCD035E72B8CB71800F555A8 /* NewMessageViewModel.swift in Sources */,
+				DC3DD8162B8F8C72005F7D7E /* Route.swift in Sources */,
 				DCD035DF2B8BF1C200F555A8 /* UserService.swift in Sources */,
 				DC4052622B83B76E008E2C96 /* ActiveNowView.swift in Sources */,
 				DC9C55D12B84D61500560291 /* ProfileViewModel.swift in Sources */,
 				DC9C55D32B85270E00560291 /* User.swift in Sources */,
 				DCD035EB2B8CF7EF00F555A8 /* MessageService.swift in Sources */,
 				DC476CF12B6A64D3001541AF /* MessengerTutorialApp.swift in Sources */,
+				DC3DD8132B8F591B005F7D7E /* ActiveNowViewModel.swift in Sources */,
 				DCD035E92B8CE44B00F555A8 /* Message.swift in Sources */,
 				DC9C55CF2B83F1F500560291 /* SettingsOptionsViewModel.swift in Sources */,
 				DCC87FC82B836832000D8921 /* RegistrationView.swift in Sources */,
